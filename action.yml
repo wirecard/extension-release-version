@@ -1,0 +1,12 @@
+name: 'Change release version'
+description: 'Automatically change release version'
+inputs:
+  repository:
+    description: 'Repository name'
+    required: true
+    default: ''
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.repository }}
