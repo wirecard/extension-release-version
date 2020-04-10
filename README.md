@@ -8,7 +8,7 @@ This can be used in an automated release workflow to change release version, as 
 Simply add the action to your workflow
 ````
 - name: Change release version
-  uses: wirecard/extension-version-check-action@master
+  uses: wirecard/extension-release-version@master
   with:
     repository: <repository-name>
 ````
