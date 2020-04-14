@@ -103,16 +103,15 @@ class ExtensionVersionUpdater:
         if self.extension_name not in naming_convention:
             print('Unknown extension name!', file=sys.stderr)
             sys.exit(1)
-        else:
-            json_content = JsonFile(Definition.CONFIG_FILE_PATH)
-            for extension_parameters in getattr(json_content.get_json_content().extensions, naming_convention[self.extension_name]):
-                content = []
-                release_version = ReleaseVersion(extension_parameters.filename, content, extension_parameters.version)
-                release_version.get_version_differences()
-                file_name = open(ExtensionVersionUpdater.get_filename_path(extension_parameters.filename), 'w')
-                for file_line in content:
-                    file_name.write(file_line)
-                file_name.close()
+        json_content = JsonFile(Definition.CONFIG_FILE_PATH)
+        for extension_parameters in getattr(json_content.get_json_content().extensions, naming_convention[self.extension_name]):
+            content = []
+            release_version = ReleaseVersion(extension_parameters.filename, content, extension_parameters.version)
+            release_version.get_version_differences()
+            file_name = open(ExtensionVersionUpdater.get_filename_path(extension_parameters.filename), 'w')
+            for file_line in content:
+                file_name.write(file_line)
+            file_name.close()
 
 
 if __name__ == "__main__":
