@@ -1,0 +1,64 @@
+{
+  "extensions": {
+    "prestashop": [
+      {
+        "filename": "wirecardpaymentgateway.php",
+        "version": "VERSION"
+      }
+    ],
+    "woocommerce": [
+      {
+        "filename": "woocommerce-wirecard-payment-gateway.php",
+        "version": "Version"
+      },
+      {
+        "filename": "readme.txt",
+        "version": "Stable tag"
+      }
+    ],
+    "magento2": [
+      {
+        "filename": "module.xml",
+        "version": "Wirecard_ElasticEngine"
+      }
+    ],
+    "shopware": [
+      {
+        "filename": "plugin.xml",
+        "version": "version"
+      }
+    ],
+    "opencart": [
+      {
+        "filename": "install.xml",
+        "version": "version"
+      },
+      {
+        "filename": "pg_plugin_data.php",
+        "version": "OPENCART_GATEWAY_WIRECARD_VERSION"
+      },
+      {
+        "filename": "bootstrap.php",
+        "version": "PLUGIN_VERSION"
+      }
+    ],
+    "oxid": [
+      {
+        "filename": "metadata.php",
+        "version": "version"
+      }
+    ],
+    "magento": [
+      {
+        "filename": "config.xml",
+        "version": "version"
+      }
+    ],
+    "paymentsdk": [
+      {
+        "filename": "VERSION",
+        "version": ""
+      }
+    ]
+  }
+}
