@@ -20,6 +20,10 @@
       {
         "filename": "module.xml",
         "version": "Wirecard_ElasticEngine"
+      },
+      {
+        "filename": "composer.json",
+        "version": "version"
       }
     ],
     "shopware": [
